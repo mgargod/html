@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="author" content="Miguel Ángel García Godoy">
+			<title>Actividad 22</title>
+			
+	</head>
+	<body>
+
+		<h1>Formulario 1</h1>
+		<form action="#" method="get">
+			<label for="nombre">Introduce tu nombre:</label>
+			<input type="text" id="nombre">
+			<br>
+			<input type="submit" value="Prueba este formulario">
+		</form>
+
+		<h1>Formulario 2</h1>
+		<p>En el siguiente formulario se utilizan campos de tipo textarea. Además tiene tres campos de tipo oculto ("hidden") con los siguientes nombres y valores:</p>
+		<ul>
+			<li>userid:"daw"</li>
+			<li>forn_name:"ejercicio"</li>
+			<li>topic:"textarea"</li>
+		</ul>
+
+		<h2 style="color:blue;">Información sobre la página</h2>
+		
+		<form action="#" method="get">
+			<textarea name="informacion" cols="70" rows="10"></textarea>
+			<br>
+			encontré esta página en: 
+			<br>
+			<textarea name="informacion" cols="70" rows="4"></textarea>
+			<br>
+			correo electrónico: 
+			<br>
+			<textarea name="email" cols="30" rows="3"></textarea>
+			<input type="hidden" name="userid" value="daw">
+			<input type="hidden" name="forn_name" value="ejercicio">
+			<input type="hidden" name="topic" value="textarea">
+			<br> <br>
+			<input type="submit" value="Enviar">
+		</form>
+
+		<h1>Formulario 3</h1>
+		<p>¿Cuáles de estos deportes ves en televisión?</p>
+		<form action="#" method="get">
+			<input type="checkbox" name="futbol" value="f" checked>Fútbol <br>
+			<input type="checkbox" name="formula" value="f">Fórmula 1 <br>
+			<input type="checkbox" name="natacion" value="f" checked>Natación <br>
+			<input type="checkbox" name="tiro" value="f">Tiro con arco <br>
+			<input type="checkbox" name="baloncesto" value="f">Baloncesto <br> <br>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Reiniciar">
+		</form>
+		<hr>
+
+		<h1>Formulario 4</h1>
+
+			<p>¿Cuál es tu deporte favorito?</p>
+
+			<form action="#" method="get">
+
+				<input type="radio" name="deportes" id="futbol" value="futbol" checked>
+				<label for="futbol">Fútbol</label> <br>
+				<input type="radio" name="deportes" id="formula1" value="formula1">
+				<label for="formula1">Fórmula 1</label> <br>
+				<input type="radio" name="deportes" id="natacion" value="natacion">
+				<label for="natacion">Natación</label> <br>
+				<input type="radio" name="deportes" id="tiroconarco" value="tiroconarco">
+				<label for="tiroconarco">Tiro con arco</label> <br>
+				<input type="radio" name="deportes" id="baloncesto" value="baloncesto">
+				<label for="baloncesto">Baloncesto</label> <br><br>
+
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Reiniciar"> 
+
+			</form>
+
+			<br>
+			<hr>
+
+			<h1>Formulario 5</h1>
+
+			<p>Lista de opciones</p>
+
+			<p>¿Cuál es tu sistema favorito? (Desplegable)</p>
+
+			<form action="#" method="get">
+
+				<select>
+
+					<option value="windows">Windows</option>
+					<option value="mac">Mac</option>
+					<option value="unix">Unix</option>
+
+				</select>
+
+				<p>¿Cuál es tu sistema favorito? (Lista)</p>
+
+				<select size="3">
+
+					<option value="windows">Windows</option>
+					<option value="mac">Mac</option>
+					<option value="unix">Unix</option>
+
+				</select>
+
+				<p>¿Cuál es tu sistema favorito? (Multiselect)</p>
+
+				<select multiple>
+
+					<option value="windows">Windows</option>
+					<option value="mac">Mac</option>
+					<option value="unix">Unix</option>
+
+				</select>
+
+				<br><br>
+
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Reiniciar"> 
+	
+
+			</form>
+			<br> 
+			<hr>
+
+			<h1>Formulario 6</h1>
+
+			<p>Fieldset</p>
+
+			<p>¿Cuál es tu navegador favorito?</p>
+
+			<form action="#" method="get">
+
+				<fieldset>
+
+					<legend>Elige un navegador</legend> <br>
+						
+						<input type="radio" name="navegadores" id="firefox" value="firefox" checked> 
+						<label for="firefox">Firefox</label><br>
+						<input type="radio" name="navegadores" id="chrome" value="chrome"> 
+						<label for="chrome">Chrome</label><br>
+						<input type="radio" name="navegadores" id="safari" value="safari"> 
+						<label for="safari">Safari</label><br>
+						<input type="radio" name="navegadores" id="explorer" value="explorer"> 
+						<label for="explorer">Explorer</label><br>
+						<input type="radio" name="navegadores" id="opera" value="opera"> 
+						<label for="opera">Opera</label><br><br>
+
+				</fieldset>
+
+				<br>
+
+				<input type="submit" value="Enviar">
+				<input type="reset" value="Reiniciar">
+
+			</form>
+
+			<br><br>
+		
+	</body>
+</html>
