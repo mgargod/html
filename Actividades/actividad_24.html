@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+			<meta charset="utf-8">
+			<title>Actividad 24</title>
+			<meta name="author" content="Miguel Ángel García Godoy">
+	</head>
+	<body>
+
+		<h1>Formulario de alta de usuario</h1>
+
+		<form action="#" method="get">
+
+			<table border="0">
+				<tbody>
+					<tr style="text-align:center;">
+						<td colspan="2">Identificador de nuevo usuario <input type="text" name="usuario" placeholder="usu_012345" disabled>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<table border="0">
+								<tbody>
+									<tr>								
+										<td style="text-align:right;">Nombre:</td>
+										<td><input type="text" name="nombre"></td>
+										<td style="text-align:right;">Apellidos:</td>
+										<td><input type="text" name="apellidos"></td>
+									</tr>
+									<tr>
+										<td style="text-align:right;">Contraseña:</td>
+										<td><input type="password" name="password"></td>
+										<td style="text-align:right;">Confirmar contraseña:</td>
+										<td><input type="password" name="confirmar"></td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:right;">Email:</td>
+						<td><input type="text" name="email"></td>
+					</tr>
+					<tr>
+						<td style="text-align:right;">Sexo:</td>
+						<td>
+							<input type="radio" name="sexo" value="varon">Varón
+							<input type="radio" name="sexo" value="mujer" checked>Mujer
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:right;">Aficiones:</td>
+						<td>
+							<input type="checkbox" name="deporte" value="deporte">Deporte<br>
+							<input type="checkbox" name="lectura" value="lectura" checked>Lectura
+							<br>
+							<input type="checkbox" name="cine" value="cine">Cine
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:right;">País:</td>
+						<td>
+							<select name="pais">
+								<option value="espana">España</option>
+								<option value="francia" selected>Francia</option>
+								<option value="portugal">Portugal</option>						
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:right;">Colores favoritos:</td>
+						<td>
+							<select name="colores" multiple>
+								<option value="rojo" selected>Rojo</option>
+								<option value="verde">Verde</option>
+								<option value="azul" selected>Azul</option>					
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:right;">Subir su foto:</td>
+					
+						<td>
+							<input type="file" name="foto" value="foto">
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:right;">Comentarios <br>personales:</td>
+						<td>
+							<textarea name="comentarios" cols="40" rows="5" placeholder="Escriba aquí sus comentarios"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" style="text-align:center;">
+							<input type="reset" name="reset" value="Resetear">
+							<input type="submit" name="enviar" value="Enviar">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" style="text-align:center;">
+							<input type="button" name="modificar" value="Modificar datos del usuario" disabled>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</form>		
+	</body>
+</html>
