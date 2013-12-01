@@ -1,0 +1,84 @@
+body {
+
+	background-color: #EBEBEB;
+	font-family: 'Arial';
+	color: #66667F;
+}
+
+h1 {
+
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 35px;	
+	text-transform: uppercase;
+}
+
+.amor {
+
+	background-color: #FFE5E9;
+	border: 10px solid #FFC0CB;
+	padding: 30px;
+	margin: 60px;
+
+}
+
+.trabajo {
+
+	background-color: #A6EDDB;
+	border: 10px solid #00CC99;
+	padding: 30px;
+	margin: 60px;
+
+}
+
+.vida {
+
+	background-color: #C2DAF3;
+	border: 10px solid #0066CC;
+	padding: 30px;
+	margin: 60px;
+
+}
+
+.autor {
+
+	color: #000000;
+	text-align: center;
+	border-bottom: 1.5px solid #000000;
+	padding: 30px;
+	margin: 60px;
+	font-style: italic;
+	font-size: 14px;
+	font-family: 'times new roman';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

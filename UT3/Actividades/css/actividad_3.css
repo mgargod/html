@@ -1,0 +1,56 @@
+body {
+
+	font-family: 'arial';
+	width: 70%;
+	margin-left: 15%;
+}
+
+.imagen {
+
+	text-align: center;
+}
+
+h1 {
+
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #DF790D;
+}
+
+h2 {
+
+	font-size: 33px;
+}
+
+h3 {
+
+	color: #3F647F;
+	font-size: 20px;
+}
+
+.tituloPie {
+
+	font-weight: bold;
+}
+
+.enlace {
+
+	color: #F19050;
+	text-decoration: none;
+}
+
+.etiqueta {
+
+	color: #87BCDE;
+	font-family: 'courier';
+}
+
+.nombre {
+
+	font-style: italic;
+}
+
+.pie {
+
+	border-bottom: 2px solid #000000;
+}
