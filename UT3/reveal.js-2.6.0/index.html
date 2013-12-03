@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="es">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Ciclo de instrucción</title>
+
+		<meta name="description" content="Descripción del ciclo de instrucción">
+		<meta name="author" content="Miguel Ángel García Godoy">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<!--<link rel="stylesheet" href="css/theme/default.css" id="theme"> -->
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal" id="comienzo">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Ciclo de instrucción</h1>
+					<h3>Asignatura de Sistemas Informáticos</h3>
+					<h4>IES Azarquiel (Toledo)</h4>
+					<p>
+						Alumno: Miguel Ángel García Godoy
+					</p>
+				</section>
+
+				<section>
+					<h2>Definición</h2>
+					<p>
+						También conocido como <span class="fragment highlight-blue">fetch and execute</span> (búsqueda y ejecución) es el período que tarda el procesador en ejecutar una instrucción.
+					</p>
+
+					<aside class="notes">
+						Me pregunto cómo cambiar algunos estilos.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Tipos más comunes de instrucciones</h2>
+
+					<ul>
+						<li>Instrucciones de <strong>transferencia de datos</strong></li>
+						<li>Instrucciones de <strong>cálculo</strong></li>
+						<li>Instrucciones de <strong>transferencia de control del programa</strong></li>
+						<li>Instrucciones de <strong>control</strong></li>
+					</ul>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Secuencia del ciclo de instrucción</h2>
+						<p>
+							Comenzamos...
+						</p>
+						<a href="#" class="image navigate-down">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>BÚSQUEDA</h2>
+						<h3>Elementos que intervienen</h3>
+						<ul>
+							<li>Contador de programa</li>
+							<li>Registro de direcciones</li>
+							<li>Registro de intercambio</li>
+							<li>Registro de instrucciones</li>
+							<li>Decodificador</li>
+						</ul>
+					</section>
+					<section>
+						<h2>EJECUCIÓN</h2>
+						<h3>Elementos que intervienen</h3>
+						<ul>
+							<li>Secuenciador</li>
+							<li>Registro de direcciones</li>
+							<li>Registro de intercambio</li>
+							<li>Registros UAL</li>
+							<li>Acumulador</li>
+							<li>Registro de intercambio</li>
+							<li>Registro de direcciones</li>
+						</ul>
+					</section>
+					<section>
+						<h2>INTERRUPCIÓN</h2>
+						<h3>Gestión de interrupciones</h3>
+					</section>
+				</section>
+				<section>				
+					<h2>Ejemplo de ciclo de instrucción</h2>					
+					<pre>
+						C = A + B						
+					</pre>
+										
+				</section>
+				<section>
+					<section>					
+						<h2>Ciclo de búsqueda</h2>
+						<h3>Descripción</h3>
+						<p>
+							La Unidad de Control comienza a ejecutar las siguientes microinstrucciones desde el secuenciador:
+						</p>
+						<a href="#" class="image navigate-down">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<ul>
+							<li>
+								<p>
+									El contador de programa tiene registrada la siguiente instrucción a ejecutar, de modo que es buscada a través del bus de direcciones en el registro de direcciones que lo encuentra en la memoria central, y se extrae de la misma al registro de intercambio.
+								</p>
+							</li>					
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>
+								<p>
+									Del registro de intercambio, la unidad de control envía la instrucción por el bus de datos al registro de instrucciones, donde se almacena temporalmente para su posterior decodificación. El contador de programa se incrementa para tener preparada la siguiente instrucción.
+								</p>
+							</li>					
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>
+								<p>	
+									El decodificador interpreta la instrucción para saber qué tipo de operación hay que realizar (en este caso, almacenar en C la suma de A y de B)
+								</p>							
+							</li>					
+						</ul>
+					</section>					
+				</section>
+				<section>
+					<section>					
+						<h2>Ciclo de ejecución</h2>
+						<h3>Descripción</h3>
+						<p>
+							La Unidad de Control comienza a ejecutar las siguientes microinstrucciones desde el secuenciador:
+						</p>
+						<a href="#" class="image navigate-down">
+							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<ul>
+							<li>
+								<p>
+									La  UC entonces manda buscar el operando “A” a través del bus de direcciones en el registro de direcciones que lo encuentra en la memoria central, y se extrae de la misma al registro de intercambio.
+								</p>
+							</li>					
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>
+								<p>
+									Desde el registro de intercambio se lleva por el bus de datos al R1 de la UAL (uno de los registros de entrada de la UAL).
+								</p>								
+							</li>					
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>
+								<p>
+									La  UC entonces manda buscar el operando “B” a través del bus de direcciones en el registro de direcciones que lo encuentra en la memoria central, y se extrae de la misma al registro de intercambio.
+								</p>								
+							</li>					
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>
+								<p>
+									Desde el registro de intercambio se lleva por el bus de datos al R2 de la UAL (otro de los registros de entrada de la UAL).
+								</p>								
+							</li>					
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>
+								<p>	
+									La UAL realiza la suma de sus registros y el resultado se almacena en el acumulador.
+								</p>							
+							</li>					
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>
+								<p>
+									La UC ordena entonces que el resultado almacenado en el acumulador se lleve por el bus de datos al registro de intercambio, para proceder a la escritura en memoria en el espacio reservado para “C”, que se busca por el bus de direcciones en el registro de direcciones.
+								</p>								
+							</li>					
+						</ul>
+					</section>					
+				</section>
+				<section>
+					<h2>Espero que les haya gustado</h2>
+					<h3>Click<a href="#comienzo"> aquí </a>para comenzar de nuevo</h3>		
+				</section>			
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
